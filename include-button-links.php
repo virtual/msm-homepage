@@ -1,7 +1,7 @@
 <div class="background-secondary background-inverse background-custom wrapper">
     <div class="column-label-event row" data-equalizer-watch="">
         <section class="button-links text-center">
-            <ul>
+            <ul class="three-columns">
                 <li class="small-12 medium-4 columns">
                     <span class="fa fa-envira fa-5x"><span class="sr-only">Leaf</span></span>
 

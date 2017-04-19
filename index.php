@@ -33,28 +33,14 @@
     <?php include ('include-events.php'); ?>
     <?php include ('include-button-links.php'); ?>
     
+    <?php include ('include-faculty-spotlight.php'); ?>
+    <?php include ('include-feature-social.php'); ?>
     
-    <div class="wrapper background-grey clearfix">
-        <div class="container">
-           xx
-        </div>
-    </div>
+    <?php include ('include-impact-bar.php'); ?>
+    
    
-    <main class="container" role="main">
-        <div class="row">
-            <div class="col-sm-6">
-                
-            </div>
-            <div class="col-sm-6">
-                
-            </div>
-            
-        </div>
-       
-    </main>
  
 
-<?php include ('include-prefooter.php'); ?>
 <?php include ('include-footer.php'); ?>
 
   

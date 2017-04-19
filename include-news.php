@@ -12,7 +12,7 @@
             </section>
         </div>
         <div class="small-4 columns msm-news">
-            <ul class="small-block-grid-1">
+            <ul class="lined-rows small-block-grid-1">
 
 
                 <li class="news-feed-item-2">

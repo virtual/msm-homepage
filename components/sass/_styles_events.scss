@@ -14,8 +14,13 @@ div.wrapper.background-custom>.row {
         color: #7e97b6;
     }
     strong.fa-stack-1x.calendar-text {
-        padding-top: 10px;
+        padding-top: 30px;
         color: #020005;
-    }
+        line-height:18px;
+    } 
     li a { font-weight: bold;}
+    li p { margin-top:10px;}
+    .calendar-text-month { font-size: 10px;display:block;clear:both; text-transform: uppercase; }
+    .calendar-text-day {clear:both;  font-size: 2rem;}
 }
+
