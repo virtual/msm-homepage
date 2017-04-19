@@ -27,12 +27,16 @@
   
 
     <?php include ('include-slider.php'); ?>
+     <?php include ('include-subfeature.php'); ?>
     
     <?php include ('include-news.php'); ?>
+    <?php include ('include-events.php'); ?>
+    <?php include ('include-button-links.php'); ?>
+    
     
     <div class="wrapper background-grey clearfix">
         <div class="container">
-            <?php include ('include-subfeature.php'); ?>
+           xx
         </div>
     </div>
    
@@ -42,7 +46,7 @@
                 
             </div>
             <div class="col-sm-6">
-                <?php include ('include-events.php'); ?>
+                
             </div>
             
         </div>

@@ -1,0 +1,21 @@
+div.wrapper.background-custom>.row {
+    background: inherit;
+}
+
+.msm-events {
+    ul,
+    li {
+        list-style: none;
+    }
+    span.fa-stack {
+        text-align: center;
+        display: block;
+        position: initial;
+        color: #7e97b6;
+    }
+    strong.fa-stack-1x.calendar-text {
+        padding-top: 10px;
+        color: #020005;
+    }
+    li a { font-weight: bold;}
+}

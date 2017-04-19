@@ -1,48 +1,54 @@
 <div class="small-12 columns">
-    <div class="news-wrapper">
-        <div class="row">
-            <div class="small-12 columns">
-                <section class="msm-featured">
-                    <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
-                        <li>
-                            <a href="/Education/">
-                                <div class="msm-featured-item"><i class="fa fa-graduation-cap fa-2"></i>
-                                    <h3>Education</h3>
-                                    <p>Preparing future health</p>
-                                    <p>learners and leaders</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/Research/">
-                                <div class="msm-featured-item"><i class="fa fa-flask fa-2"></i>
-                                    <h3>Research</h3>
-                                    <p>Translating discovery</p>
-                                    <p>into health equity</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/patient-care/">
-                                <div class="msm-featured-item"><i class="fa fa-stethoscope fa-2"></i>
-                                    <h3>Patient Care</h3>
-                                    <p>Building bridges between</p>
-                                    <p>health care and health</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/Community/index.php">
-                                <div class="msm-featured-item"><i class="fa fa-child fa-2"></i><i class="fa fa-child fa-1"></i><i class="fa fa-child fa-2"></i>
-                                    <h3>Community</h3>
-                                    <p>Transforming communities</p>
-                                    <p>through education and care</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
+    <div class="row">
+        <div class="small-8 columns">
+            <section class="msm-featured">
+                <a href="http://www.msm.edu/RSSFeedArticles/April2017/hankaaronglostervanguardaward.php" title="Morehouse School of Medicine Celebrates the Contributions of Hank Aaron and Raises More Than $800,000 to Advance Health Equity">
+                    <img alt="Morehouse School of Medicine Celebrates the Contributions of Hank Aaron and Raises More Than $800,000 to Advance Health Equity" src="http://www.msm.edu/RSSFeedArticles/April2017/images/HughGlosterSociety2017.jpg" />
+
+                    <div>
+                        <h3><span>Morehouse School of Medicine Celebrates the Contributions of Hank Aaron and Raises More Than $800,000 to Advance Health Equity</span></h3>
+                    </div>
+                </a>
+            </section>
+        </div>
+        <div class="small-4 columns msm-news">
+            <ul class="small-block-grid-1">
+
+
+                <li class="news-feed-item-2">
+                    <a href="http://www.msm.edu/RSSFeedArticles/April2017/ofilinmqflifetimeachievement.php" title="MSM's Dr. Elizabeth Ofili to Receive 2017 NMQF Lifetime Achievement Award">
+                        <img alt="MSM's Dr. Elizabeth Ofili to Receive 2017 NMQF Lifetime Achievement Award" src="http://www.msm.edu/RSSFeedArticles/April2017/images/elizabethofiliheadshot1.jpg" />
+
+                        <div>
+                            <p>MSM's Dr. Elizabeth Ofili to Receive 2017 NMQF Lifetime Achievement Award <small class="news-article-date">Dec. 12, 2016</small></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="news-feed-item-3">
+                    <a href="http://www.msm.edu/RSSFeedArticles/April2017/valeriemontgomeryricehoratioalgeraward.php" title="Morehouse School of Medicine President and Dean Dr. Valerie Montgomery Rice Inducted Into Horatio Alger Association">
+                        <img alt="Morehouse School of Medicine President and Dean Dr. Valerie Montgomery Rice Inducted Into Horatio Alger Association" src="http://www.msm.edu/RSSFeedArticles/April2017/images/horatioalgervmrfamily.jpg" />
+
+                        <div>
+                            <p>Morehouse School of Medicine President and Dean Dr. Valerie Montgomery Rice Inducted Into Horatio Alger Association <small class="news-article-date">Dec. 12, 2016</small></p>
+                        </div>
+                    </a>
+                </li>
+                <li class="news-feed-item-4">
+                    <a href="http://www.msm.edu/RSSFeedArticles/March2017/matchday100percentstudentmatch.php" title="Morehouse School of Medicine Students Match at 100 Percent">
+                        <img alt="Morehouse School of Medicine Students Match at 100 Percent" src="http://www.msm.edu/RSSFeedArticles/March2017/images/MatchDayMatch_email.jpg" />
+
+                        <div>
+                            <p>Morehouse School of Medicine Students Match at 100 Percent <small class="news-article-date">Dec. 12, 2016</small></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            
+            <ul class="text-center button-list blue">
+                              
+                              <li><a href="http://www.msm.edu/news-center/">View News</a></li>
+                              
+                           </ul>
         </div>
     </div>
 </div>
