@@ -1,0 +1,38 @@
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+// ==========================================================================
+// Print styles.
+// Inlined to avoid the additional HTTP request: h5bp.com/r
+// ==========================================================================
+@media print {
+    .mobile-heading,
+    .breadcrumb,
+    .pre-footer-social, #left, #expand_section {
+        display: none;
+    }
+    #header,
+    #banner {
+        display: block !important;
+    }
+    .page-title-background h1,
+    h1 {
+        font-size: 2.5rem;
+        padding: 10px 0;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 2.5rem;
+    }
+    .alert-message,
+    .main-banner {
+        display: none;
+    }
+    .sidebar .well {
+        padding: 0;
+    }
+    .page-title-background > div,
+    .buffer-top,
+    .buffer-bottom {
+        padding: 5px 0;
+    }
+}
