@@ -4,6 +4,7 @@
 @import "foundation.scss";
 @import "msm.scss";
 
+$brand-primary: #1a3f8a;
 @import "styles_oustyles";
 @import "styles_animate";
 @import "styles_base";
@@ -13,6 +14,9 @@
 @import "styles_inlineinput";
 @import "styles_mainelements";
 @import "styles_events";
+@import "styles_news";
+@import "styles_spotlight";
+@import "styles_social";
 @import "styles_button-links";
 @import "styles_tables";
 @import "styles_print";

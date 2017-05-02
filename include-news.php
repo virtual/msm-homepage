@@ -1,12 +1,12 @@
 <div class="small-12 columns">
     <div class="row">
         <div class="small-8 columns">
-            <section class="msm-featured">
+            <section class="newsfeature">
                 <a href="http://www.msm.edu/RSSFeedArticles/April2017/hankaaronglostervanguardaward.php" title="Morehouse School of Medicine Celebrates the Contributions of Hank Aaron and Raises More Than $800,000 to Advance Health Equity">
-                    <img alt="Morehouse School of Medicine Celebrates the Contributions of Hank Aaron and Raises More Than $800,000 to Advance Health Equity" src="http://www.msm.edu/RSSFeedArticles/April2017/images/HughGlosterSociety2017.jpg" />
+                    <img alt="Morehouse School of Medicine Celebrates the Contributions of Hank Aaron and Raises More Than $800,000 to Advance Health Equity" src="./_resources-new/images/home/newsfeature/HughGlosterSociety2017.jpg" />
 
                     <div>
-                        <h3><span>Morehouse School of Medicine Celebrates the Contributions of Hank Aaron and Raises More Than $800,000 to Advance Health Equity</span></h3>
+                        <h3>Morehouse School of Medicine Celebrates the Contributions of Hank Aaron and Raises More Than $800,000 to Advance Health Equity</h3>
                     </div>
                 </a>
             </section>

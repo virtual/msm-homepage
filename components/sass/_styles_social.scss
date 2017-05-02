@@ -1,0 +1,16 @@
+.social-feature {
+    
+    @include headings(){
+        color:$brand-primary;
+    }
+    h2 {  margin-top:0;padding-top:0;}
+    
+    h3 { display:inline-block;font-weight: 600; margin-top:0;padding-top:0;}
+    .social-list-inline  { float:right;
+        .fa {
+        font-size: 24px;
+        }
+    }
+    .social-video { padding: 16px; border: 1px solid #ddd;}
+    .social-video .flex-video { border: 1px solid #ddd;}
+}

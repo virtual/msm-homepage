@@ -1,4 +1,4 @@
-<div class="background-primary background-inverse background-custom wrapper">
+<div class="background-primary background-inverse background-custom wrapper faculty-spotlight parallax">
     <div class="column-label-event row" data-equalizer-watch="">
         <section class="video-feature">
             <div class="medium-6 small-12 columns">

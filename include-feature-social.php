@@ -4,16 +4,22 @@
            
             <div class="medium-7 small-12 columns">
                 <h2>MSM Alumni </h2>
-                 <ul class="social-list-inline ">
-                    <li><a href="#"><span class="fa fa-linkedin-square"><span class="sr-only">linkedin</span></span></a></li>
-                    <li><a href="#"><span class="fa fa-linkedin-square"><span class="sr-only">linkedin</span></span></a></li>
-                </ul>
+                
                 <p class="lead">Morehouse School of Medicine faculty, staff and students share their favorite experiences at MSM.</p>
                 
                 
                 <div class="row">
                     <div class="columns medium-7 small-12">
-                        <h3>Social Media</h3>
+                      
+                         
+                         <h3>Social Media</h3>
+                         <ul class="social-list-inline ">
+                   
+                    <li><a href="#"><span class="fa fa-fw fa-facebook"><span class="sr-only">facebook</span></span></a></li>
+                     <li><a href="#"><span class="fa fa-fw fa-twitter"><span class="sr-only">twitter</span></span></a></li>
+                    <li><a href="#"><span class="fa fa-fw fa-linkedin-square"><span class="sr-only">linkedin</span></span></a></li>
+                </ul>
+                       
                         <p>Facebook social box. Honoring 40 years of mission center medical education, health care and community engagement, Morehouse School of Medicine (MSM) chronicles the past and the future. With President and Dean Valerie Montgomery Rice at the helm, MSM is leading the creation and advancement of health equity.</p>
                     </div>
                        <div class="columns medium-5 small-12">
@@ -33,12 +39,13 @@
             </div>
             
             <div class="medium-5 small-12 columns">
+               <div class="social-video">
                 <div class="flex-video widescreen">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/-V3Ngrk9Gig?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <p>Honoring 40 years of mission center medical education, health care and community engagement, Morehouse School of Medicine (MSM) chronicles the past and the future. With President and Dean Valerie Montgomery Rice at the helm, MSM is leading the creation and advancement of health equity.</p>
             </div>
-           
+           </div>
         </section>
     </div>
 </div>
