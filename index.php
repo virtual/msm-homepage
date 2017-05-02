@@ -32,6 +32,7 @@
     <?php include ('include-news.php'); ?>
     <?php include ('include-events.php'); ?>
     <?php include ('include-button-links.php'); ?>
+    <?php //include ('include-component-card.php'); ?>
     
     <?php include ('include-faculty-spotlight.php'); ?>
     <?php include ('include-feature-social.php'); ?>
