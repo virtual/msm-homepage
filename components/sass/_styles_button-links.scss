@@ -1,6 +1,13 @@
 .button-links {
+    a {  display: block;  transition: all 0.5s ease-in-out;}
+    a:hover { 
+        color:#dff7ff; 
+        strong { text-decoration: underline;}
+    }
     ul,li { list-style: none;}
-    .fa { padding-bottom: 10px;}
+    .fa { padding-bottom: 10px; width: 100%;
+    display: block;}
+    strong { clear:both; display:block;} 
 }
 
 	

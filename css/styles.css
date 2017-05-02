@@ -4991,15 +4991,21 @@ div.wrapper.background-custom > .row { background: inherit; }
 /* line 13, ../components/sass/_styles_events.scss */
 .msm-events span.fa-stack { text-align: center; display: block; position: initial; color: #7e97b6; }
 /* line 19, ../components/sass/_styles_events.scss */
-.msm-events strong.fa-stack-1x.calendar-text { padding-top: 30px; color: #020005; line-height: 18px; }
-/* line 24, ../components/sass/_styles_events.scss */
-.msm-events li a { font-weight: bold; }
+.msm-events span.calendar-text { padding-top: 30px; color: #444; line-height: 18px; font-weight: 600; }
 /* line 25, ../components/sass/_styles_events.scss */
-.msm-events li p { margin-top: 10px; }
+.msm-events li a { display: block; color: #444; padding-bottom: 20px; }
 /* line 26, ../components/sass/_styles_events.scss */
+.msm-events li a strong { color: #2e3e72; }
+/* line 29, ../components/sass/_styles_events.scss */
+.msm-events li a:hover strong { text-decoration: underline; }
+/* line 31, ../components/sass/_styles_events.scss */
+.msm-events strong { clear: both; margin-top: 10px; display: inline-block; }
+/* line 37, ../components/sass/_styles_events.scss */
 .msm-events .calendar-text-month { font-size: 10px; display: block; clear: both; text-transform: uppercase; }
-/* line 27, ../components/sass/_styles_events.scss */
+/* line 38, ../components/sass/_styles_events.scss */
 .msm-events .calendar-text-day { clear: both; font-size: 2rem; }
+/* line 39, ../components/sass/_styles_events.scss */
+.msm-events .event-date:before { content: "\2014"; }
 
 /* line 1, ../components/sass/_styles_news.scss */
 .newsfeature { padding: 16px; border: 1px solid #ddd; margin-bottom: 24px; }
@@ -5381,11 +5387,19 @@ div.wrapper.background-custom > .row { background: inherit; }
 @media (min-width: 992px) { /* line 34, ../components/sass/_styles_impact.scss */
   .impact-bar section .fancy-heading { width: 20%; margin-left: 15px; margin-right: 15px; } }
 /* line 2, ../components/sass/_styles_button-links.scss */
-.button-links ul, .button-links li { list-style: none; }
+.button-links a { display: block; transition: all 0.5s ease-in-out; }
 /* line 3, ../components/sass/_styles_button-links.scss */
-.button-links .fa { padding-bottom: 10px; }
+.button-links a:hover { color: #dff7ff; }
+/* line 5, ../components/sass/_styles_button-links.scss */
+.button-links a:hover strong { text-decoration: underline; }
+/* line 7, ../components/sass/_styles_button-links.scss */
+.button-links ul, .button-links li { list-style: none; }
+/* line 8, ../components/sass/_styles_button-links.scss */
+.button-links .fa { padding-bottom: 10px; width: 100%; display: block; }
+/* line 10, ../components/sass/_styles_button-links.scss */
+.button-links strong { clear: both; display: block; }
 
-@media (min-width: 640px) { /* line 8, ../components/sass/_styles_button-links.scss */
+@media (min-width: 640px) { /* line 15, ../components/sass/_styles_button-links.scss */
   .button-links .three-columns .column:nth-of-type(3n+2), .button-links .three-columns .columns:nth-of-type(3n+2) { border-left: 1px solid #fff; border-right: 1px solid #fff; padding-left: 2rem; padding-right: 2rem; } }
 /* line 1, ../components/sass/_styles_tables.scss */
 td { padding: 3px; }

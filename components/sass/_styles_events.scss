@@ -16,14 +16,26 @@ div.wrapper.background-custom>.row {
         position: initial;
         color: #7e97b6;
     }
-    strong.fa-stack-1x.calendar-text {
+    span.calendar-text {
         padding-top: 30px;
-        color: #020005;
+        color: #444;
         line-height:18px;
+        font-weight: 600;
     } 
-    li a { font-weight: bold;}
-    li p { margin-top:10px;}
+    li a {  display:block; color:#444; padding-bottom:20px;
+        strong { color:$brand-primary}    
+    }
+    li a:hover {
+        strong { text-decoration: underline;}
+    }
+    strong {
+    clear: both;
+    margin-top: 10px;
+    display: inline-block; 
+}
+    
     .calendar-text-month { font-size: 10px;display:block;clear:both; text-transform: uppercase; }
     .calendar-text-day {clear:both;  font-size: 2rem;}
+    .event-date:before { content:"\2014"}
 }
 
