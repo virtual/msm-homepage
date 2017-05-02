@@ -1,12 +1,12 @@
 <footer>
-    <div class="row">
+    <div class="row footer-address">
         <div class="small-12 medium-6 columns">
             <a class="footer-logo" href="/" title="Morehouse School of Medicine">
                 <img alt="Morehouse School of Medicine" src="./_resources-new/images/logo_footer-275x60.png" />
             </a>
             <p class="vision">Leading the creation and advancement of health equity.</p>
         </div>
-        <div class="small-12 medium-6 text-right columns">
+        <div class="small-12 medium-6 address-block columns">
             <address>
                   <span class="bold">Morehouse School of Medicine</span>
                   <span>720 Westview Drive</span>
@@ -17,18 +17,48 @@
 
     </div>
     <div class="row">
-        <div class="small-12 medium-12 columns">
+        <div class="small-12 medium-12 columns footer-links">
             <div class="row">
-                <div class="small-6 medium-4 columns">
-                    <h3>Follow Us</h3>
+                <div class="small-12 medium-12 large-4 columns footer-social">
+                    <p>Follow Us</p>
                     <ul class="social-list-inline">
-                        <li><a href="#"><span class="fa fa-linkedin-square"><span class="sr-only">linkedin</span></span></a></li>
-                        <li><a href="#"><span class="fa fa-linkedin-square"><span class="sr-only">linkedin</span></span></a></li>
+                        <li><a href="https://www.facebook.com/MorehouseSchoolofMedicine" title="Find Morehouse School of Medicine on Facebook"><span class="fa-stack fa-lg">
+  <span class="fa fa-square fa-stack-2x fa-bg-facebook "><span class="sr-only">facebook</span></span>
+                            <span class="fa fa-facebook fa-stack-1x fa-inverse"><span class="sr-only">facebook</span></span>
+                            </span></a>
+                        </li>
+                        <li><a href="https://twitter.com/MSMEDU" title="Find Morehouse School of Medicine on Twitter"><span class="fa-stack fa-lg">
+  <span class="fa fa-square fa-stack-2x fa-bg-twitter "><span class="sr-only">twitter</span></span>
+                            <span class="fa fa-twitter fa-stack-1x fa-inverse"><span class="sr-only">twitter</span></span>
+                            </span></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/morehouseschoolofmedicine/" title="Find Morehouse School of Medicine on Instagram"><span class="fa-stack fa-lg">
+  <span class="fa fa-square fa-stack-2x fa-bg-instagram "><span class="sr-only">instagram</span></span>
+                            <span class="fa fa-instagram fa-stack-1x fa-inverse"><span class="sr-only">instagram</span></span>
+                            </span></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/school/19337" title="Find Morehouse School of Medicine on LinkedIn"><span class="fa-stack fa-lg">
+  <span class="fa fa-square fa-stack-2x fa-bg-linkedin "><span class="sr-only">linkedin</span></span>
+                            <span class="fa fa-linkedin fa-stack-1x fa-inverse"><span class="sr-only">linkedin</span></span>
+                            </span></a>
+                        </li>
+                        <li><a href="https://www.youtube.com/user/TheMSMEDU" title="Find Morehouse School of Medicine on Youtube"><span class="fa-stack fa-lg">
+  <span class="fa fa-square fa-stack-2x fa-bg-youtube "><span class="sr-only">youtube</span></span>
+                            <span class="fa fa-youtube fa-stack-1x fa-inverse"><span class="sr-only">youtube</span></span>
+                            </span></a>
+                        </li>
+                        
+                        <li><a href="#" title="View Morehouse School of Medicine RSS"><span class="fa-stack fa-lg">
+  <span class="fa fa-square fa-stack-2x fa-bg-rss "><span class="sr-only">rss</span></span>
+                            <span class="fa fa-rss fa-stack-1x fa-inverse"><span class="sr-only">rss</span></span>
+                            </span></a>
+                        </li>
+                        
                     </ul>
                 </div>
-                <div class="small-12 medium-8 columns">
+                <div class="small-12 medium-12 large-8 columns">
                     <div class="row">
-                        <div class="small-4 columns">
+                        <div class="small-12 medium-4 columns">
                             <ul>
 
                                 <li>
@@ -59,7 +89,7 @@
 
                             </ul>
                         </div>
-                        <div class="small-4 columns">
+                        <div class="small-12 medium-4 columns">
                             <ul>
 
                                 <li>
@@ -81,7 +111,7 @@
 
                             </ul>
                         </div>
-                        <div class="small-4 columns">
+                        <div class="small-12 medium-4 columns">
                             <ul>
 
                                 <li>
@@ -105,17 +135,19 @@
                     </div>
 
                 </div>
+
+                <div class="small-12 text-center columns footer-partners">
+
+                    <p> </p>
+
+                    <p>A partner of</p>
+
+                    <a title="Morehouse Healthcare" href="http://www.morehousehealthcare.com/" target="_blank"><img src="http://morehousehealthcare.com/_resources/images/Morehouse-Healthcare-logo-white.png" alt="Morehouse Healthcare"></a>
+                </div>
             </div>
 
         </div>
-        <div class="small-12 text-center columns">
 
-            <p> </p>
-
-            <p>Partner Site(s):</p>
-
-            <a title="Morehouse Healthcare" href="http://www.morehousehealthcare.com/" target="_blank">Morehouse Healthcare</a>
-        </div>
         <div class="small-12 columns">
             <p class="copyright">
                 <span id="directedit">©</span>
