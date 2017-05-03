@@ -1,6 +1,6 @@
 <div class="small-12 columns">
     <div class="row">
-        <div class="small-8 columns">
+        <div class="large-8 medium-6 small-12 columns">
             <section class="newsfeature">
                 <a href="http://www.msm.edu/RSSFeedArticles/April2017/hankaaronglostervanguardaward.php" title="Morehouse School of Medicine Celebrates the Contributions of Hank Aaron and Raises More Than $800,000 to Advance Health Equity">
                     <img alt="Morehouse School of Medicine Celebrates the Contributions of Hank Aaron and Raises More Than $800,000 to Advance Health Equity" src="./_resources-new/images/home/newsfeature/HughGlosterSociety2017.jpg" />
@@ -11,7 +11,8 @@
                 </a>
             </section>
         </div>
-        <div class="small-4 columns msm-news">
+        <div class="large-4 medium-6 small-12 columns msm-news">
+           
             <ul class="lined-rows small-block-grid-1">
 
 

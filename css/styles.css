@@ -5007,6 +5007,12 @@ div.wrapper.background-custom > .row { background: inherit; }
 /* line 39, ../components/sass/_styles_events.scss */
 .msm-events .event-date:before { content: "\2014"; }
 
+@media (max-width: 50em) { /* line 43, ../components/sass/_styles_events.scss */
+  .msm-events li { width: 50%; }
+  /* line 44, ../components/sass/_styles_events.scss */
+  .msm-events li:nth-child(2n+1) { display: block; clear: left; } }
+@media (max-width: 30em) { /* line 47, ../components/sass/_styles_events.scss */
+  .msm-events li { width: 100%; display: block; clear: left; } }
 /* line 1, ../components/sass/_styles_news.scss */
 .newsfeature { padding: 16px; border: 1px solid #ddd; margin-bottom: 24px; }
 /* line 4, ../components/sass/_styles_news.scss */
@@ -5019,7 +5025,7 @@ div.wrapper.background-custom > .row { background: inherit; }
 /* line 17, ../components/sass/_styles_news.scss */
 .msm-news p { margin-bottom: 0; }
 /* line 18, ../components/sass/_styles_news.scss */
-.msm-news ul { margin-bottom: 15px; }
+.msm-news ul { margin-bottom: 45px; }
 /* line 20, ../components/sass/_styles_news.scss */
 .msm-news li a p { font-weight: 600; }
 /* line 21, ../components/sass/_styles_news.scss */
@@ -5030,13 +5036,13 @@ div.wrapper.background-custom > .row { background: inherit; }
 .msm-news .fancy-heading { text-align: center; font-family: 'Times New Roman', serif; }
 /* line 32, ../components/sass/_styles_news.scss */
 .msm-news .fancy-heading p { font-size: 24px; }
+/* line 36, ../components/sass/_styles_news.scss */
+.msm-news .lined-rows li { padding-top: 1rem; padding-bottom: 1rem; border-top: 1px solid #ccc; }
+/* line 41, ../components/sass/_styles_news.scss */
+.msm-news .lined-rows li:first-of-type { border-top: 0; padding-top: 0; }
 
-@media (min-width: 640px) { /* line 39, ../components/sass/_styles_news.scss */
-  .msm-news ul { margin-bottom: 45px; }
-  /* line 40, ../components/sass/_styles_news.scss */
-  .msm-news .lined-rows li { padding-top: 1rem; padding-bottom: 1rem; border-top: 1px solid #ccc; }
-  /* line 45, ../components/sass/_styles_news.scss */
-  .msm-news .lined-rows li:first-of-type { border-top: 0; padding-top: 0; } }
+@media (max-width: 40em) { /* line 48, ../components/sass/_styles_news.scss */
+  .msm-news ul { margin-left: 0; margin-right: 0; margin-bottom: 2rem; } }
 /* line 1, ../components/sass/_styles_spotlight.scss */
 .faculty-spotlight.parallax { background-image: linear-gradient(rgba(61, 80, 134, 0.85), rgba(61, 80, 134, 0.85)), url("http://www.msm.edu/careerprofessionaldevelopment/images/TeachingAcademy-h2.jpg"); }
 
