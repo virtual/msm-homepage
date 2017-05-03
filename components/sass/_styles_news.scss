@@ -15,7 +15,7 @@
     }
     
     p { margin-bottom:0;}
-    ul { margin-bottom:45px; }
+    ul.lined-rows { padding-top:1rem; }
     li { 
         a p { font-weight:600;}
         a small { display:block; clear:left; color:#585858; font-size: 12px; font-style:italic; font-weight:400;} 
@@ -43,7 +43,7 @@
     }
 }
 
- 
+.newsfeature, .msm-news { padding-bottom: 2rem;} 
 @media (max-width: 40em) {
     .msm-news ul { margin-left: 0;margin-right: 0; margin-bottom: 2rem;}
 }

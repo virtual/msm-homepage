@@ -5025,7 +5025,7 @@ div.wrapper.background-custom > .row { background: inherit; }
 /* line 17, ../components/sass/_styles_news.scss */
 .msm-news p { margin-bottom: 0; }
 /* line 18, ../components/sass/_styles_news.scss */
-.msm-news ul { margin-bottom: 45px; }
+.msm-news ul.lined-rows { padding-top: 1rem; }
 /* line 20, ../components/sass/_styles_news.scss */
 .msm-news li a p { font-weight: 600; }
 /* line 21, ../components/sass/_styles_news.scss */
@@ -5040,6 +5040,9 @@ div.wrapper.background-custom > .row { background: inherit; }
 .msm-news .lined-rows li { padding-top: 1rem; padding-bottom: 1rem; border-top: 1px solid #ccc; }
 /* line 41, ../components/sass/_styles_news.scss */
 .msm-news .lined-rows li:first-of-type { border-top: 0; padding-top: 0; }
+
+/* line 46, ../components/sass/_styles_news.scss */
+.newsfeature, .msm-news { padding-bottom: 2rem; }
 
 @media (max-width: 40em) { /* line 48, ../components/sass/_styles_news.scss */
   .msm-news ul { margin-left: 0; margin-right: 0; margin-bottom: 2rem; } }
@@ -5380,18 +5383,28 @@ div.wrapper.background-custom > .row { background: inherit; }
 .impact-bar.wrapper { padding-top: 0; padding-bottom: 0; background-image: url("../_resources-new/images/home/diag-bar-bk.jpg"); }
 
 /* line 8, ../components/sass/_styles_impact.scss */
-.impact-bar section > .row > div { padding-top: 10px; }
-/* line 10, ../components/sass/_styles_impact.scss */
+.impact-bar section > .row > div { padding-top: 10px; padding-bottom: 10px; }
+/* line 11, ../components/sass/_styles_impact.scss */
 .impact-bar section > .row > div p, .impact-bar section > .row > div ul { padding-bottom: 0; margin-bottom: 0; }
-/* line 16, ../components/sass/_styles_impact.scss */
-.impact-bar section > .row > div.fancy-heading { background: rgba(18, 26, 51, 0.4); text-align: center; padding-top: 20px; padding-bottom: 20px; padding-right: 0; }
+/* line 17, ../components/sass/_styles_impact.scss */
+.impact-bar .fancy-heading { background: rgba(18, 26, 51, 0.4); text-align: center; padding: 20px 0; font-family: 'Times New Romans', serif; }
 /* line 22, ../components/sass/_styles_impact.scss */
-.impact-bar section > .row > div.fancy-heading p { font-size: 1rem; font-weight: 300; }
-/* line 28, ../components/sass/_styles_impact.scss */
-.impact-bar section .button-list.blue li a { background: rgba(18, 26, 51, 0.61); }
+.impact-bar .fancy-heading p { font-size: 1.3rem; font-weight: 300; text-align: center; display: block; width: 100%; }
+/* line 29, ../components/sass/_styles_impact.scss */
+.impact-bar .fancy-heading p a { color: inherit; }
+/* line 32, ../components/sass/_styles_impact.scss */
+.impact-bar .button-list.blue { margin-top: 1rem; }
+/* line 33, ../components/sass/_styles_impact.scss */
+.impact-bar .button-list.blue li a { background: rgba(18, 26, 51, 0.61); }
 
-@media (min-width: 992px) { /* line 34, ../components/sass/_styles_impact.scss */
-  .impact-bar section .fancy-heading { width: 20%; margin-left: 15px; margin-right: 15px; } }
+@media screen and (min-width: 40em) { /* line 41, ../components/sass/_styles_impact.scss */
+  .impact-bar .button-list.blue { margin-top: 3px; }
+  /* line 42, ../components/sass/_styles_impact.scss */
+  .impact-bar .button-list.blue li { margin-bottom: 0; }
+  /* line 43, ../components/sass/_styles_impact.scss */
+  .impact-bar .equal-row { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: stretch; }
+  /* line 51, ../components/sass/_styles_impact.scss */
+  .impact-bar .equal-row > div { min-height: 0; min-width: 0; display: inherit; flex-wrap: wrap; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-transition: background-color 300ms ease-in-out 300ms; -moz-transition: background-color 300ms ease-in-out 300ms; -o-transition: background-color 300ms ease-in-out 300ms; transition: background-color 300ms ease-in-out 300ms; } }
 /* line 2, ../components/sass/_styles_button-links.scss */
 .button-links a { display: block; transition: all 0.5s ease-in-out; }
 /* line 3, ../components/sass/_styles_button-links.scss */

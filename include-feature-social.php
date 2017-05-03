@@ -40,14 +40,21 @@
                
             </div>
             
-            <div class="large-5 medium-12 small-12 columns">
-               <div class="social-video">
-                <div class="flex-video widescreen">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-V3Ngrk9Gig?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+          <div class="large-5 medium-12 small-12 columns">
+            
+                <div class="social-video clearfix">
+                  <div class="row">
+                   <div class="large-12 medium-6 small-12 columns">
+                    <div class="flex-video widescreen">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-V3Ngrk9Gig?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    </div>
+                    <div class="large-12 medium-6 small-12 columns">
+                    <p>Honoring 40 years of mission center medical education, health care and community engagement, Morehouse School of Medicine (MSM) chronicles the past and the future. With President and Dean Valerie Montgomery Rice at the helm, MSM is leading the creation and advancement of health equity.</p>
+                    </div>
                 </div>
-                <p>Honoring 40 years of mission center medical education, health care and community engagement, Morehouse School of Medicine (MSM) chronicles the past and the future. With President and Dean Valerie Montgomery Rice at the helm, MSM is leading the creation and advancement of health equity.</p>
             </div>
-           </div>
+          </div>
         </section>
     </div>
 </div>
