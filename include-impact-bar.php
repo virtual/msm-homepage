@@ -3,7 +3,7 @@
         <section class="small-12">
             <div class="row equal-row" data-equalizer="">
                 <div class="large-3 medium-4 small-12 columns fancy-heading flexbox1" data-equalizer-watch="">
-                    <p><em>{ your gift has impact }</em></p>
+                    <p><em><a href="http://giving.msm.edu/">{ your gift has impact }</a></em></p>
 
                 </div>
                 <div class="large-9 medium-8 small-12 columns flexbox2" data-equalizer-watch="">
@@ -14,7 +14,7 @@
                         <div class="large-3 medium-4 columns">
                             <ul class="text-center button-list blue">
 
-                                <li><a href="http://www.msm.edu/news-center/">Invest&nbsp;Today</a></li>
+                                <li><a href="http://giving.msm.edu/">Invest&nbsp;Today</a></li>
 
                             </ul>
                         </div>

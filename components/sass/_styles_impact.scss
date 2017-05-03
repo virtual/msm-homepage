@@ -6,8 +6,8 @@
 
 .impact-bar {
     section >.row > div {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         p,
         ul {
             padding-bottom: 0;
@@ -24,14 +24,20 @@
             font-weight: 300;
             text-align: center;
             display: block;
-            width:100%;
+            width:100%; 
         }
-        p a { color:inherit;}
+        
+        p a { color:inherit; display: inline-block;  
+             border-top: 1px solid transparent;}
+        p a:hover { border-bottom: 1px dotted #cad7ff; color:#cad7ff }
         
     }
     .button-list.blue { margin-top:1rem;}
     .button-list.blue li a {
             background: rgba(18, 26, 51, 0.61);
+        }
+    .button-list.blue li a:hover {
+            background: rgba(18, 26, 51, 0.71);
         }
 }
 

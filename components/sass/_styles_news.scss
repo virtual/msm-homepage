@@ -1,5 +1,5 @@
 .newsfeature {
-    padding: 16px; border: 1px solid #ddd; margin-bottom: 24px;
+    padding: 16px; border: 1px solid #ddd; 
     
     h3 { color:$brand-primary; margin:0; font-weight: 400; padding-top: 8px; font-size: 1.1rem }
 }
@@ -43,7 +43,7 @@
     }
 }
 
-.newsfeature, .msm-news { padding-bottom: 2rem;} 
+.newsfeature, .msm-news { margin-bottom:25px;} 
 @media (max-width: 40em) {
     .msm-news ul { margin-left: 0;margin-right: 0; margin-bottom: 2rem;}
 }
