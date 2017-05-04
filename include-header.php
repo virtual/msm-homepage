@@ -3,7 +3,7 @@
    <div class="row">
       <div class="medium-4 columns" id="header-logo">
          <a href="/" title="Morehouse School of Medicine">
-            <img src="./_resources-new/images/full_logo2.png" alt="Morehouse School of Medicine"></img>
+            <img src="./_resources-new/images/full_logo2.png" alt="Morehouse School of Medicine"> 
          </a>
       </div>
       <div class="medium-8 columns" id="header-nav">

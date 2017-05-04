@@ -1,3 +1,8 @@
+.social-list-inline a {
+    transition: color 0.2s ease-in-out;
+}
+
+
 .social-feature {
     
     @include headings(){
@@ -6,10 +11,13 @@
     h2 {  margin-top:0;padding-top:0;}
     
     h3 { display:inline-block;font-weight: 600; margin-top:0;padding-top:0;}
+    h3 a:hover { text-decoration: underline;}
     .social-list-inline  { float:right;
         .fa {
         font-size: 24px;
+             transition: color 0.2s ease-in-out;
         }
+        a:hover .fa { color:darken($brand-primary,10);}
     }
     .social-video { padding: 16px; border: 1px solid #ddd;}
     .social-video .flex-video { border: 1px solid #ddd;}
@@ -19,3 +27,18 @@
 @media (max-width: 40em) {
     .alumni-photos h3 { padding-top:15px;} 
 }
+
+.alumni-photos ul li a { background-color:$brand-primary; display:block;}
+.alumni-photos ul li a img {
+    opacity: 1; 
+    
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; 
+}
+.alumni-photos ul li a:hover img {
+	opacity: .8;
+    
+} 

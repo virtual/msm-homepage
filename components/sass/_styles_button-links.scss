@@ -1,8 +1,27 @@
+.button-list.blue li a, .msm-featured *, .button-links a {
+    transition: all 0.2s ease-in-out;
+}
+
+.news-wrapper section.msm-featured a { display: block;}
+.news-wrapper section.msm-featured a:hover { 
+   
+    background-image: url("../_resources-new/images/home/diag-bar-bk.jpg");
+    background-repeat: repeat;
+    
+    .msm-featured-item {
+      //background-color: #3d5086;
+        background-color: rgba(61, 80, 134, 0.22);
+        
+    h3, .fa, p{ color:#fff;}    
+    }
+}
+
 .button-links {
-    a {  display: block;  transition: all 0.5s ease-in-out;}
+    a {  display: block;  }
     a:hover { 
-        color:#dff7ff; 
+        color:#fffbe9;
         strong { text-decoration: underline;}
+        .fa {    text-shadow: 0 0 5px #176077;}
     }
     ul,li { list-style: none;}
     .fa { padding-bottom: 10px; width: 100%;

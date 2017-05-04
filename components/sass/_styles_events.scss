@@ -15,6 +15,7 @@ div.wrapper.background-custom>.row {
         display: block;
         position: initial;
         color: #7e97b6;
+            transition: color .2s ease-in-out;
     }
     span.calendar-text {
         padding-top: 30px;
@@ -27,6 +28,10 @@ div.wrapper.background-custom>.row {
     }
     li a:hover {
         strong { text-decoration: underline;}
+        span.fa-stack {
+        color: #3d5086;
+        }
+        span.calendar-text {color: #3d5086;}
     }
     strong {
     clear: both;

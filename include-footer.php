@@ -48,7 +48,7 @@
                             </span></a>
                         </li>
                         
-                        <li><a href="#" title="View Morehouse School of Medicine RSS"><span class="fa-stack fa-lg">
+                        <li><a href="http://msm.edu/rss/msm-news.xml" title="View Morehouse School of Medicine RSS"><span class="fa-stack fa-lg">
   <span class="fa fa-square fa-stack-2x fa-bg-rss "><span class="sr-only">rss</span></span>
                             <span class="fa fa-rss fa-stack-1x fa-inverse"><span class="sr-only">rss</span></span>
                             </span></a>

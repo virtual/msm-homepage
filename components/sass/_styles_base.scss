@@ -19,3 +19,13 @@ div.wrapper.background-custom { margin-top:0;}
 
     li { display:inline-block;}
 }
+
+::-moz-selection { /* Code for Firefox */
+    color: #ffffff;
+    background: $brand-primary;
+}
+
+::selection {
+    color: #ffffff; 
+    background: $brand-primary;
+}

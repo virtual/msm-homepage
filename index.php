@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta name="theme-color" content="#006401" />
-    <link rel="icon" sizes="192x192" href="images/structure/logos/icon.png" />
+    <meta name="theme-color" content="#2e3e72" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
 

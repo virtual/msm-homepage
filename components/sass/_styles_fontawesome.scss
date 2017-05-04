@@ -21,6 +21,31 @@
     color: #ff9900
 }
 
+a:hover {
+.fa-bg-linkedin {
+    color: darken(#0976b4, 2);
+}
+
+.fa-bg-facebook {
+    color: darken(#3b5998, 2);
+}
+
+.fa-bg-twitter {
+    color: darken(#55acee, 5);
+}
+
+.fa-bg-youtube {
+    color: darken(#e52d27, 5);
+}
+
+.fa-bg-instagram {
+    color: darken(#3f729b, 2);
+}
+.fa-bg-rss {
+    color: darken(#ff9900, 5);
+}
+}
+
 .fa-color {
     &.fa-500px{ color:#0099e5; }
 &.fa-adn{ color:#4A484C; }

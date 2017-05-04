@@ -4924,6 +4924,12 @@ div.wrapper.background-custom { margin-top: 0; }
 /* line 20, ../components/sass/_styles_base.scss */
 .social-list-inline li { display: inline-block; }
 
+/* line 23, ../components/sass/_styles_base.scss */
+::-moz-selection { /* Code for Firefox */ color: #ffffff; background: #2e3e72; }
+
+/* line 28, ../components/sass/_styles_base.scss */
+::selection { color: #ffffff; background: #2e3e72; }
+
 /* line 1, ../components/sass/_styles_footer.scss */
 footer > div.row > div.columns:first-child { padding-left: 15px; }
 
@@ -4949,12 +4955,14 @@ footer .footer-partners p { color: #999; }
 footer .footer-partners img { max-width: 250px; height: auto; }
 /* line 23, ../components/sass/_styles_footer.scss */
 footer p.copyright { padding-top: 25px; }
+/* line 24, ../components/sass/_styles_footer.scss */
+footer a:hover { color: #a7bbf7; }
 
-@media (min-width: 768px) { /* line 26, ../components/sass/_styles_footer.scss */
+@media (min-width: 768px) { /* line 27, ../components/sass/_styles_footer.scss */
   footer .footer-links ul { margin-bottom: 0; }
-  /* line 27, ../components/sass/_styles_footer.scss */
+  /* line 28, ../components/sass/_styles_footer.scss */
   footer .address-block { text-align: right; padding-bottom: 10px; } }
-@media (max-width: 991px) { /* line 30, ../components/sass/_styles_footer.scss */
+@media (max-width: 991px) { /* line 31, ../components/sass/_styles_footer.scss */
   .footer-social { text-align: center; border-bottom: 1px solid #666; padding-bottom: 15px; margin-bottom: 15px; } }
 /* line 1, ../components/sass/_styles_inlineinput.scss */
 .custom-inline-input { margin: 0; padding: 0; }
@@ -4989,65 +4997,99 @@ div.wrapper.background-custom > .row { background: inherit; }
 /* line 9, ../components/sass/_styles_events.scss */
 .msm-events ul, .msm-events li { list-style: none; }
 /* line 13, ../components/sass/_styles_events.scss */
-.msm-events span.fa-stack { text-align: center; display: block; position: initial; color: #7e97b6; }
-/* line 19, ../components/sass/_styles_events.scss */
+.msm-events span.fa-stack { text-align: center; display: block; position: initial; color: #7e97b6; transition: color .2s ease-in-out; }
+/* line 20, ../components/sass/_styles_events.scss */
 .msm-events span.calendar-text { padding-top: 30px; color: #444; line-height: 18px; font-weight: 600; }
-/* line 25, ../components/sass/_styles_events.scss */
-.msm-events li a { display: block; color: #444; padding-bottom: 20px; }
 /* line 26, ../components/sass/_styles_events.scss */
+.msm-events li a { display: block; color: #444; padding-bottom: 20px; }
+/* line 27, ../components/sass/_styles_events.scss */
 .msm-events li a strong { color: #2e3e72; }
-/* line 29, ../components/sass/_styles_events.scss */
+/* line 30, ../components/sass/_styles_events.scss */
 .msm-events li a:hover strong { text-decoration: underline; }
 /* line 31, ../components/sass/_styles_events.scss */
+.msm-events li a:hover span.fa-stack { color: #3d5086; }
+/* line 34, ../components/sass/_styles_events.scss */
+.msm-events li a:hover span.calendar-text { color: #3d5086; }
+/* line 36, ../components/sass/_styles_events.scss */
 .msm-events strong { clear: both; margin-top: 10px; display: inline-block; }
-/* line 37, ../components/sass/_styles_events.scss */
+/* line 42, ../components/sass/_styles_events.scss */
 .msm-events .calendar-text-month { font-size: 10px; display: block; clear: both; text-transform: uppercase; }
-/* line 38, ../components/sass/_styles_events.scss */
+/* line 43, ../components/sass/_styles_events.scss */
 .msm-events .calendar-text-day { clear: both; font-size: 2rem; }
-/* line 39, ../components/sass/_styles_events.scss */
+/* line 44, ../components/sass/_styles_events.scss */
 .msm-events .event-date:before { content: "\2014"; }
 
-@media (max-width: 50em) { /* line 43, ../components/sass/_styles_events.scss */
+@media (max-width: 50em) { /* line 48, ../components/sass/_styles_events.scss */
   .msm-events li { width: 50%; }
-  /* line 44, ../components/sass/_styles_events.scss */
+  /* line 49, ../components/sass/_styles_events.scss */
   .msm-events li:nth-child(2n+1) { display: block; clear: left; } }
-@media (max-width: 30em) { /* line 47, ../components/sass/_styles_events.scss */
+@media (max-width: 30em) { /* line 52, ../components/sass/_styles_events.scss */
   .msm-events li { width: 100%; display: block; clear: left; } }
 /* line 1, ../components/sass/_styles_news.scss */
-.newsfeature { padding: 16px; border: 1px solid #ddd; }
-/* line 4, ../components/sass/_styles_news.scss */
+.newsfeature { transition: all .5s ease-in-out; padding: 16px; border: 1px solid #ddd; }
+/* line 7, ../components/sass/_styles_news.scss */
 .newsfeature h3 { color: #2e3e72; margin: 0; font-weight: 400; padding-top: 8px; font-size: 1.1rem; }
-
-/* line 6, ../components/sass/_styles_news.scss */
-.msm-news { padding-bottom: initial; border-bottom: 0; margin-bottom: 0; }
+/* line 8, ../components/sass/_styles_news.scss */
+.newsfeature img { transition: all .5s ease-in-out; }
 /* line 10, ../components/sass/_styles_news.scss */
-.msm-news h2 { font-size: 1.375rem !important; text-align: left !important; font-size: 2em; text-align: center; }
+.newsfeature .image-container { transition: all .2s ease-in; }
+/* line 11, ../components/sass/_styles_news.scss */
+.newsfeature .image-container:before, .newsfeature .image-container:after { transition: all .2s ease-in; content: ""; }
+/* line 16, ../components/sass/_styles_news.scss */
+.newsfeature .image-container { position: relative; display: block; background: rgba(26, 63, 138, 0.37); }
 /* line 17, ../components/sass/_styles_news.scss */
-.msm-news p { margin-bottom: 0; }
-/* line 18, ../components/sass/_styles_news.scss */
-.msm-news ul.lined-rows { padding-top: 1rem; }
-/* line 20, ../components/sass/_styles_news.scss */
-.msm-news li a p { font-weight: 600; }
-/* line 21, ../components/sass/_styles_news.scss */
-.msm-news li a small { display: block; clear: left; color: #585858; font-size: 12px; font-style: italic; font-weight: 400; }
-/* line 23, ../components/sass/_styles_news.scss */
-.msm-news li img { float: right; width: 100px; height: auto; padding: 0 0 0 10px; }
-/* line 29, ../components/sass/_styles_news.scss */
-.msm-news .fancy-heading { text-align: center; font-family: 'Times New Roman', serif; }
-/* line 32, ../components/sass/_styles_news.scss */
-.msm-news .fancy-heading p { font-size: 24px; }
-/* line 36, ../components/sass/_styles_news.scss */
-.msm-news .lined-rows li { padding-top: 1rem; padding-bottom: 1rem; border-top: 1px solid #ccc; }
-/* line 41, ../components/sass/_styles_news.scss */
-.msm-news .lined-rows li:first-of-type { border-top: 0; padding-top: 0; }
+.newsfeature .image-container:before { visibility: hidden; content: ""; color: #fff; background: rgba(26, 63, 138, 0.01); display: block; position: absolute; top: 0; left: 0; bottom: 0; right: 0; }
+/* line 26, ../components/sass/_styles_news.scss */
+.newsfeature .image-container:after { visibility: hidden; content: " Read more \00BB"; color: #fff; background: rgba(26, 63, 138, 0.01); border: 1px solid #fff; padding: 8px 16px; display: block; position: absolute; bottom: 45%; left: 40%; width: 20%; text-align: center; }
+/* line 42, ../components/sass/_styles_news.scss */
+.newsfeature:hover { background-color: #f2f2ff; }
+/* line 44, ../components/sass/_styles_news.scss */
+.newsfeature:hover a { text-decoration: underline; }
+/* line 48, ../components/sass/_styles_news.scss */
+.newsfeature:hover .image-container { position: relative; display: block; background: rgba(26, 63, 138, 0.37); }
+/* line 49, ../components/sass/_styles_news.scss */
+.newsfeature:hover .image-container:before { visibility: visible; background: rgba(26, 63, 138, 0.17); }
+/* line 53, ../components/sass/_styles_news.scss */
+.newsfeature:hover .image-container:after { visibility: visible; background: rgba(26, 63, 138, 0.8); }
 
-/* line 46, ../components/sass/_styles_news.scss */
+@media (max-width: 70em) { /* line 62, ../components/sass/_styles_news.scss */
+  .newsfeature .image-container:after { bottom: 40%; width: 30%; left: 35%; } }
+@media (max-width: 60em) { /* line 66, ../components/sass/_styles_news.scss */
+  .newsfeature .image-container:after { width: 40%; left: 30%; bottom: 35%; } }
+@media (max-width: 30em) { /* line 69, ../components/sass/_styles_news.scss */
+  .newsfeature .image-container:after { width: 60%; left: 20%; bottom: 30%; } }
+/* line 72, ../components/sass/_styles_news.scss */
+.msm-news { padding-bottom: initial; border-bottom: 0; margin-bottom: 0; }
+/* line 76, ../components/sass/_styles_news.scss */
+.msm-news h2 { font-size: 1.375rem !important; text-align: left !important; font-size: 2em; text-align: center; }
+/* line 83, ../components/sass/_styles_news.scss */
+.msm-news p { margin-bottom: 0; }
+/* line 86, ../components/sass/_styles_news.scss */
+.msm-news li a p { font-weight: 600; }
+/* line 88, ../components/sass/_styles_news.scss */
+.msm-news li a small { display: block; clear: left; color: #585858; font-size: 12px; font-style: italic; font-weight: 400; }
+/* line 90, ../components/sass/_styles_news.scss */
+.msm-news li img { float: right; width: 100px; height: auto; padding: 0 0 0 10px; }
+/* line 96, ../components/sass/_styles_news.scss */
+.msm-news .fancy-heading { text-align: center; font-family: 'Times New Roman', serif; }
+/* line 99, ../components/sass/_styles_news.scss */
+.msm-news .fancy-heading p { font-size: 24px; }
+/* line 103, ../components/sass/_styles_news.scss */
+.msm-news .lined-rows li { padding-top: 1rem; padding-bottom: 1rem; border-top: 1px solid #ccc; transition: background-color .5s ease-in-out; }
+/* line 109, ../components/sass/_styles_news.scss */
+.msm-news .lined-rows li:hover { background-color: #f2f2ff; }
+/* line 111, ../components/sass/_styles_news.scss */
+.msm-news .lined-rows li:hover .news-article-title { text-decoration: underline; }
+/* line 113, ../components/sass/_styles_news.scss */
+.msm-news .lined-rows li:first-of-type { border-top: 0; }
+
+/* line 119, ../components/sass/_styles_news.scss */
 .newsfeature, .msm-news { margin-bottom: 25px; }
 
-@media (max-width: 40em) { /* line 48, ../components/sass/_styles_news.scss */
+@media (max-width: 40em) { /* line 121, ../components/sass/_styles_news.scss */
   .msm-news ul { margin-left: 0; margin-right: 0; margin-bottom: 2rem; } }
 /* line 1, ../components/sass/_styles_spotlight.scss */
-.faculty-spotlight.parallax { background-image: linear-gradient(rgba(61, 80, 134, 0.85), rgba(61, 80, 134, 0.85)), url("http://www.msm.edu/careerprofessionaldevelopment/images/TeachingAcademy-h2.jpg"); }
+.faculty-spotlight.parallax { background-image: linear-gradient(rgba(61, 80, 134, 0.85), rgba(61, 80, 134, 0.85)), url("http://www.msm.edu/Admissions/images/AdmissionsBanner784-2.jpg"); }
 
 /* line 6, ../components/sass/_styles_spotlight.scss */
 .faculty-spotlight p.lead { line-height: 1.5; font-size: 1rem; color: #f8dd6c; }
@@ -5055,6 +5097,9 @@ div.wrapper.background-custom > .row { background: inherit; }
 .faculty-spotlight p { margin-bottom: .5rem; }
 /* line 8, ../components/sass/_styles_spotlight.scss */
 .faculty-spotlight .social-list-inline a:hover { color: #f8dd6c; }
+
+/* line 1, ../components/sass/_styles_social.scss */
+.social-list-inline a { transition: color 0.2s ease-in-out; }
 
 /* line 3, ../components/sass/_styles_base.scss */
 .social-feature h1 { color: #2e3e72; }
@@ -5068,21 +5113,34 @@ div.wrapper.background-custom > .row { background: inherit; }
 .social-feature h5 { color: #2e3e72; }
 /* line 3, ../components/sass/_styles_base.scss */
 .social-feature h6 { color: #2e3e72; }
-/* line 6, ../components/sass/_styles_social.scss */
+/* line 11, ../components/sass/_styles_social.scss */
 .social-feature h2 { margin-top: 0; padding-top: 0; }
-/* line 8, ../components/sass/_styles_social.scss */
+/* line 13, ../components/sass/_styles_social.scss */
 .social-feature h3 { display: inline-block; font-weight: 600; margin-top: 0; padding-top: 0; }
-/* line 9, ../components/sass/_styles_social.scss */
-.social-feature .social-list-inline { float: right; }
-/* line 10, ../components/sass/_styles_social.scss */
-.social-feature .social-list-inline .fa { font-size: 24px; }
 /* line 14, ../components/sass/_styles_social.scss */
-.social-feature .social-video { padding: 16px; border: 1px solid #ddd; }
+.social-feature h3 a:hover { text-decoration: underline; }
 /* line 15, ../components/sass/_styles_social.scss */
+.social-feature .social-list-inline { float: right; }
+/* line 16, ../components/sass/_styles_social.scss */
+.social-feature .social-list-inline .fa { font-size: 24px; transition: color 0.2s ease-in-out; }
+/* line 20, ../components/sass/_styles_social.scss */
+.social-feature .social-list-inline a:hover .fa { color: #1f2a4e; }
+/* line 22, ../components/sass/_styles_social.scss */
+.social-feature .social-video { padding: 16px; border: 1px solid #ddd; }
+/* line 23, ../components/sass/_styles_social.scss */
 .social-feature .social-video .flex-video { border: 1px solid #ddd; }
 
-@media (max-width: 40em) { /* line 20, ../components/sass/_styles_social.scss */
+@media (max-width: 40em) { /* line 28, ../components/sass/_styles_social.scss */
   .alumni-photos h3 { padding-top: 15px; } }
+/* line 31, ../components/sass/_styles_social.scss */
+.alumni-photos ul li a { background-color: #2e3e72; display: block; }
+
+/* line 32, ../components/sass/_styles_social.scss */
+.alumni-photos ul li a img { opacity: 1; -webkit-transition: opacity 1s ease-in-out; -moz-transition: opacity 1s ease-in-out; -ms-transition: opacity 1s ease-in-out; -o-transition: opacity 1s ease-in-out; transition: opacity 1s ease-in-out; }
+
+/* line 41, ../components/sass/_styles_social.scss */
+.alumni-photos ul li a:hover img { opacity: .8; }
+
 /* line 1, ../components/sass/_styles_fontawesome.scss */
 .fa-bg-linkedin { color: #0976b4; }
 
@@ -5102,288 +5160,301 @@ div.wrapper.background-custom > .row { background: inherit; }
 .fa-bg-rss { color: #ff9900; }
 
 /* line 25, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-500px { color: #0099e5; }
-/* line 26, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-adn { color: #4A484C; }
-/* line 27, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-amazon { color: #ff9900; }
-/* line 28, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-android { color: #a4c639; }
+a:hover .fa-bg-linkedin { color: #0970aa; }
 /* line 29, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-angellist { color: #000; }
-/* line 30, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-apple { color: #979797; }
-/* line 31, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-behance-square { color: #1769ff; }
-/* line 32, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-behance { color: #1769ff; }
+a:hover .fa-bg-facebook { color: #385591; }
 /* line 33, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-bitbucket-square { color: #205081; }
-/* line 34, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-bitbucket { color: #205081; }
-/* line 35, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-bitcoin { color: #ee9209; }
-/* line 36, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-black-tie { color: #222; }
+a:hover .fa-bg-twitter { color: #3ea1ec; }
 /* line 37, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-btc { color: #ee9209; }
-/* line 38, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-buysellads { color: #c90100; }
-/* line 39, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-cc-amex { color: #007bc1; }
-/* line 40, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-cc-diners-club { color: #004A97; }
+a:hover .fa-bg-youtube { color: #d8201a; }
 /* line 41, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-cc-discover { color: #f68121; }
-/* line 42, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-cc-jcb { color: #003A8F; }
-/* line 43, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-cc-mastercard { color: #0a3a82; }
+a:hover .fa-bg-instagram { color: #3c6d94; }
 /* line 44, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-cc-paypal { color: #253b80; }
-/* line 45, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-cc-stripe { color: #00afe1; }
-/* line 46, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-cc-visa { color: #0157a2; }
-/* line 47, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-chrome { color: #4587F3; }
-/* line 48, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-codepen { color: #000; }
-/* line 49, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-connectdevelop { color: #391448; }
+a:hover .fa-bg-rss { color: #e68a00; }
+
 /* line 50, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-contao { color: #eb8623; }
+.fa-color.fa-500px { color: #0099e5; }
 /* line 51, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-creative-commons { color: #231f20; }
+.fa-color.fa-adn { color: #4A484C; }
 /* line 52, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-css3 { color: #1680C0; }
+.fa-color.fa-amazon { color: #ff9900; }
 /* line 53, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-dashcube { color: #7f7f7f; }
+.fa-color.fa-android { color: #a4c639; }
 /* line 54, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-delicious { color: #3399ff; }
+.fa-color.fa-angellist { color: #000; }
 /* line 55, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-deviantart { color: #4e6252; }
+.fa-color.fa-apple { color: #979797; }
 /* line 56, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-digg { color: #000; }
+.fa-color.fa-behance-square { color: #1769ff; }
 /* line 57, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-dribbble { color: #444444; }
+.fa-color.fa-behance { color: #1769ff; }
 /* line 58, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-dropbox { color: #007ee5; }
+.fa-color.fa-bitbucket-square { color: #205081; }
 /* line 59, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-drupal { color: #0077c0; }
+.fa-color.fa-bitbucket { color: #205081; }
 /* line 60, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-empire { color: #000; }
+.fa-color.fa-bitcoin { color: #ee9209; }
 /* line 61, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-expeditedssl { color: #343433; }
+.fa-color.fa-black-tie { color: #222; }
 /* line 62, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-facebook-official { color: #3b5998; }
+.fa-color.fa-btc { color: #ee9209; }
 /* line 63, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-facebook-square { color: #3b5998; }
+.fa-color.fa-buysellads { color: #c90100; }
 /* line 64, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-facebook { color: #3b5998; }
+.fa-color.fa-cc-amex { color: #007bc1; }
 /* line 65, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-firefox { color: #e66000; }
+.fa-color.fa-cc-diners-club { color: #004A97; }
 /* line 66, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-flickr { color: #ff0084; }
+.fa-color.fa-cc-discover { color: #f68121; }
 /* line 67, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-fonticons { color: #1C1E29; }
+.fa-color.fa-cc-jcb { color: #003A8F; }
 /* line 68, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-forumbee { color: #83ad13; }
+.fa-color.fa-cc-mastercard { color: #0a3a82; }
 /* line 69, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-foursquare { color: #0072b1; }
+.fa-color.fa-cc-paypal { color: #253b80; }
 /* line 70, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-ge { color: #000; }
+.fa-color.fa-cc-stripe { color: #00afe1; }
 /* line 71, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-get-pocket { color: #d3505a; }
+.fa-color.fa-cc-visa { color: #0157a2; }
 /* line 72, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-gg-circle { color: #000; }
+.fa-color.fa-chrome { color: #4587F3; }
 /* line 73, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-gg { color: #000; }
+.fa-color.fa-codepen { color: #000; }
 /* line 74, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-git-square { color: #333; }
+.fa-color.fa-connectdevelop { color: #391448; }
 /* line 75, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-git { color: #333; }
+.fa-color.fa-contao { color: #eb8623; }
 /* line 76, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-github-alt { color: #333; }
+.fa-color.fa-creative-commons { color: #231f20; }
 /* line 77, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-github-square { color: #333; }
+.fa-color.fa-css3 { color: #1680C0; }
 /* line 78, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-github { color: #333; }
+.fa-color.fa-dashcube { color: #7f7f7f; }
 /* line 79, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-gittip { color: #663300; }
+.fa-color.fa-delicious { color: #3399ff; }
 /* line 80, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-google-plus-square { color: #dd4b39; }
+.fa-color.fa-deviantart { color: #4e6252; }
 /* line 81, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-google-plus { color: #dd4b39; }
+.fa-color.fa-digg { color: #000; }
 /* line 82, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-google-wallet { color: #4285f4; }
+.fa-color.fa-dribbble { color: #444444; }
 /* line 83, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-google { color: #4285f4; }
+.fa-color.fa-dropbox { color: #007ee5; }
 /* line 84, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-hacker-news { color: #ff6600; }
+.fa-color.fa-drupal { color: #0077c0; }
 /* line 85, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-houzz { color: #7ac142; }
+.fa-color.fa-empire { color: #000; }
 /* line 86, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-html5 { color: #e34f26; }
+.fa-color.fa-expeditedssl { color: #343433; }
 /* line 87, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-instagram { color: #3f729b; }
+.fa-color.fa-facebook-official { color: #3b5998; }
 /* line 88, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-internet-explorer { color: #1EBBEE; }
+.fa-color.fa-facebook-square { color: #3b5998; }
 /* line 89, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-ioxhost { color: #faa729; }
+.fa-color.fa-facebook { color: #3b5998; }
 /* line 90, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-joomla { color: #142849; }
+.fa-color.fa-firefox { color: #e66000; }
 /* line 91, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-jsfiddle { color: #4679BD; }
+.fa-color.fa-flickr { color: #ff0084; }
 /* line 92, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-lastfm-square { color: #c3000d; }
+.fa-color.fa-fonticons { color: #1C1E29; }
 /* line 93, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-lastfm { color: #c3000d; }
+.fa-color.fa-forumbee { color: #83ad13; }
 /* line 94, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-leanpub { color: #0c0c0c; }
+.fa-color.fa-foursquare { color: #0072b1; }
 /* line 95, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-linkedin-square { color: #0976b4; }
+.fa-color.fa-ge { color: #000; }
 /* line 96, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-linkedin { color: #0976b4; }
+.fa-color.fa-get-pocket { color: #d3505a; }
 /* line 97, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-linux { color: #333333; }
+.fa-color.fa-gg-circle { color: #000; }
 /* line 98, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-maxcdn { color: #FF6600; }
+.fa-color.fa-gg { color: #000; }
 /* line 99, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-meanpath { color: #538ed7; }
+.fa-color.fa-git-square { color: #333; }
 /* line 100, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-medium { color: #000; }
+.fa-color.fa-git { color: #333; }
 /* line 101, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-odnoklassniki-square { color: #ed812b; }
+.fa-color.fa-github-alt { color: #333; }
 /* line 102, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-odnoklassniki { color: #ed812b; }
+.fa-color.fa-github-square { color: #333; }
 /* line 103, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-opencart { color: #2AC2EF; }
+.fa-color.fa-github { color: #333; }
 /* line 104, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-openid { color: #F78C40; }
+.fa-color.fa-gittip { color: #663300; }
 /* line 105, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-opera { color: #cc0f16; }
+.fa-color.fa-google-plus-square { color: #dd4b39; }
 /* line 106, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-optin-monster { color: #83c11f; }
+.fa-color.fa-google-plus { color: #dd4b39; }
 /* line 107, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-pagelines { color: #000; }
+.fa-color.fa-google-wallet { color: #4285f4; }
 /* line 108, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-paypal { color: #253b80; }
+.fa-color.fa-google { color: #4285f4; }
 /* line 109, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-pied-piper-alt { color: #2f9f46; }
+.fa-color.fa-hacker-news { color: #ff6600; }
 /* line 110, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-pied-piper-square { color: #2f9f46; }
+.fa-color.fa-houzz { color: #7ac142; }
 /* line 111, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-pied-piper { color: #2f9f46; }
+.fa-color.fa-html5 { color: #e34f26; }
 /* line 112, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-pinterest-p { color: #cc2127; }
+.fa-color.fa-instagram { color: #3f729b; }
 /* line 113, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-pinterest-square { color: #cc2127; }
+.fa-color.fa-internet-explorer { color: #1EBBEE; }
 /* line 114, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-pinterest { color: #cc2127; }
+.fa-color.fa-ioxhost { color: #faa729; }
 /* line 115, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-qq { color: #000; }
+.fa-color.fa-joomla { color: #142849; }
 /* line 116, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-ra { color: #000; }
+.fa-color.fa-jsfiddle { color: #4679BD; }
 /* line 117, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-rebel { color: #000; }
+.fa-color.fa-lastfm-square { color: #c3000d; }
 /* line 118, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-reddit-square { color: #ff4500; }
+.fa-color.fa-lastfm { color: #c3000d; }
 /* line 119, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-reddit { color: #ff4500; }
+.fa-color.fa-leanpub { color: #0c0c0c; }
 /* line 120, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-renren { color: #005EAC; }
+.fa-color.fa-linkedin-square { color: #0976b4; }
 /* line 121, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-safari { color: #1B88CA; }
+.fa-color.fa-linkedin { color: #0976b4; }
 /* line 122, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-sellsy { color: #1f78b9; }
+.fa-color.fa-linux { color: #333333; }
 /* line 123, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-share-alt-square { color: #01bf01; }
+.fa-color.fa-maxcdn { color: #FF6600; }
 /* line 124, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-share-alt { color: #01bf01; }
+.fa-color.fa-meanpath { color: #538ed7; }
 /* line 125, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-shirtsinbulk { color: #dd3a26; }
+.fa-color.fa-medium { color: #000; }
 /* line 126, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-simplybuilt { color: #000; }
+.fa-color.fa-odnoklassniki-square { color: #ed812b; }
 /* line 127, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-skyatlas { color: #00adbb; }
+.fa-color.fa-odnoklassniki { color: #ed812b; }
 /* line 128, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-skype { color: #00aff0; }
+.fa-color.fa-opencart { color: #2AC2EF; }
 /* line 129, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-slack { color: #0f7965; }
+.fa-color.fa-openid { color: #F78C40; }
 /* line 130, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-slideshare { color: #e98325; }
+.fa-color.fa-opera { color: #cc0f16; }
 /* line 131, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-soundcloud { color: #f80; }
+.fa-color.fa-optin-monster { color: #83c11f; }
 /* line 132, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-spotify { color: #7ab800; }
+.fa-color.fa-pagelines { color: #000; }
 /* line 133, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-stack-exchange { color: #000; }
+.fa-color.fa-paypal { color: #253b80; }
 /* line 134, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-stack-overflow { color: #fe7a15; }
+.fa-color.fa-pied-piper-alt { color: #2f9f46; }
 /* line 135, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-steam-square { color: #0B0B0B; }
+.fa-color.fa-pied-piper-square { color: #2f9f46; }
 /* line 136, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-steam { color: #0B0B0B; }
+.fa-color.fa-pied-piper { color: #2f9f46; }
 /* line 137, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-stumbleupon-circle { color: #eb4924; }
+.fa-color.fa-pinterest-p { color: #cc2127; }
 /* line 138, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-stumbleupon { color: #eb4924; }
+.fa-color.fa-pinterest-square { color: #cc2127; }
 /* line 139, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-tencent-weibo { color: #74AF2C; }
+.fa-color.fa-pinterest { color: #cc2127; }
 /* line 140, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-trello { color: #256a92; }
+.fa-color.fa-qq { color: #000; }
 /* line 141, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-tripadvisor { color: #589442; }
+.fa-color.fa-ra { color: #000; }
 /* line 142, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-tumblr-square { color: #35465c; }
+.fa-color.fa-rebel { color: #000; }
 /* line 143, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-tumblr { color: #35465c; }
+.fa-color.fa-reddit-square { color: #ff4500; }
 /* line 144, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-twitch { color: #6441a5; }
+.fa-color.fa-reddit { color: #ff4500; }
 /* line 145, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-twitter-square { color: #55acee; }
+.fa-color.fa-renren { color: #005EAC; }
 /* line 146, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-twitter { color: #55acee; }
+.fa-color.fa-safari { color: #1B88CA; }
 /* line 147, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-viacoin { color: #333; }
+.fa-color.fa-sellsy { color: #1f78b9; }
 /* line 148, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-vimeo-square { color: #1ab7ea; }
+.fa-color.fa-share-alt-square { color: #01bf01; }
 /* line 149, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-vimeo { color: #1ab7ea; }
+.fa-color.fa-share-alt { color: #01bf01; }
 /* line 150, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-vine { color: #00b488; }
+.fa-color.fa-shirtsinbulk { color: #dd3a26; }
 /* line 151, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-vk { color: #45668e; }
+.fa-color.fa-simplybuilt { color: #000; }
 /* line 152, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-wechat { color: #93d034; }
+.fa-color.fa-skyatlas { color: #00adbb; }
 /* line 153, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-weibo { color: #E71D34; }
+.fa-color.fa-skype { color: #00aff0; }
 /* line 154, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-weixin { color: #93d034; }
+.fa-color.fa-slack { color: #0f7965; }
 /* line 155, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-wikipedia-w { color: #000; }
+.fa-color.fa-slideshare { color: #e98325; }
 /* line 156, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-windows { color: #00bcf2; }
+.fa-color.fa-soundcloud { color: #f80; }
 /* line 157, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-wordpress { color: #21759b; }
+.fa-color.fa-spotify { color: #7ab800; }
 /* line 158, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-xing-square { color: #026466; }
+.fa-color.fa-stack-exchange { color: #000; }
 /* line 159, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-xing { color: #026466; }
+.fa-color.fa-stack-overflow { color: #fe7a15; }
 /* line 160, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-y-combinator { color: #F0652F; }
+.fa-color.fa-steam-square { color: #0B0B0B; }
 /* line 161, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-yahoo { color: #400191; }
+.fa-color.fa-steam { color: #0B0B0B; }
 /* line 162, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-yc { color: #F0652F; }
+.fa-color.fa-stumbleupon-circle { color: #eb4924; }
 /* line 163, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-yelp { color: #af0606; }
+.fa-color.fa-stumbleupon { color: #eb4924; }
 /* line 164, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-youtube-play { color: #e52d27; }
+.fa-color.fa-tencent-weibo { color: #74AF2C; }
 /* line 165, ../components/sass/_styles_fontawesome.scss */
-.fa-color.fa-youtube-square { color: #e52d27; }
+.fa-color.fa-trello { color: #256a92; }
 /* line 166, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-tripadvisor { color: #589442; }
+/* line 167, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-tumblr-square { color: #35465c; }
+/* line 168, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-tumblr { color: #35465c; }
+/* line 169, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-twitch { color: #6441a5; }
+/* line 170, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-twitter-square { color: #55acee; }
+/* line 171, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-twitter { color: #55acee; }
+/* line 172, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-viacoin { color: #333; }
+/* line 173, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-vimeo-square { color: #1ab7ea; }
+/* line 174, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-vimeo { color: #1ab7ea; }
+/* line 175, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-vine { color: #00b488; }
+/* line 176, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-vk { color: #45668e; }
+/* line 177, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-wechat { color: #93d034; }
+/* line 178, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-weibo { color: #E71D34; }
+/* line 179, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-weixin { color: #93d034; }
+/* line 180, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-wikipedia-w { color: #000; }
+/* line 181, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-windows { color: #00bcf2; }
+/* line 182, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-wordpress { color: #21759b; }
+/* line 183, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-xing-square { color: #026466; }
+/* line 184, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-xing { color: #026466; }
+/* line 185, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-y-combinator { color: #F0652F; }
+/* line 186, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-yahoo { color: #400191; }
+/* line 187, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-yc { color: #F0652F; }
+/* line 188, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-yelp { color: #af0606; }
+/* line 189, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-youtube-play { color: #e52d27; }
+/* line 190, ../components/sass/_styles_fontawesome.scss */
+.fa-color.fa-youtube-square { color: #e52d27; }
+/* line 191, ../components/sass/_styles_fontawesome.scss */
 .fa-color.fa-youtube { color: #e52d27; }
 
 /* line 1, ../components/sass/_styles_impact.scss */
@@ -5416,20 +5487,35 @@ div.wrapper.background-custom > .row { background: inherit; }
   .impact-bar .equal-row { display: -webkit-flex; display: -ms-flexbox; display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: stretch; }
   /* line 57, ../components/sass/_styles_impact.scss */
   .impact-bar .equal-row > div { min-height: 0; min-width: 0; display: inherit; flex-wrap: wrap; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-transition: background-color 300ms ease-in-out 300ms; -moz-transition: background-color 300ms ease-in-out 300ms; -o-transition: background-color 300ms ease-in-out 300ms; transition: background-color 300ms ease-in-out 300ms; } }
-/* line 2, ../components/sass/_styles_button-links.scss */
-.button-links a { display: block; transition: all 0.5s ease-in-out; }
-/* line 3, ../components/sass/_styles_button-links.scss */
-.button-links a:hover { color: #dff7ff; }
+/* line 1, ../components/sass/_styles_button-links.scss */
+.button-list.blue li a, .msm-featured *, .button-links a { transition: all 0.2s ease-in-out; }
+
 /* line 5, ../components/sass/_styles_button-links.scss */
+.news-wrapper section.msm-featured a { display: block; }
+
+/* line 6, ../components/sass/_styles_button-links.scss */
+.news-wrapper section.msm-featured a:hover { background-image: url("../_resources-new/images/home/diag-bar-bk.jpg"); background-repeat: repeat; }
+/* line 11, ../components/sass/_styles_button-links.scss */
+.news-wrapper section.msm-featured a:hover .msm-featured-item { background-color: rgba(61, 80, 134, 0.22); }
+/* line 15, ../components/sass/_styles_button-links.scss */
+.news-wrapper section.msm-featured a:hover .msm-featured-item h3, .news-wrapper section.msm-featured a:hover .msm-featured-item .fa, .news-wrapper section.msm-featured a:hover .msm-featured-item p { color: #fff; }
+
+/* line 20, ../components/sass/_styles_button-links.scss */
+.button-links a { display: block; }
+/* line 21, ../components/sass/_styles_button-links.scss */
+.button-links a:hover { color: #fffbe9; }
+/* line 23, ../components/sass/_styles_button-links.scss */
 .button-links a:hover strong { text-decoration: underline; }
-/* line 7, ../components/sass/_styles_button-links.scss */
+/* line 24, ../components/sass/_styles_button-links.scss */
+.button-links a:hover .fa { text-shadow: 0 0 5px #176077; }
+/* line 26, ../components/sass/_styles_button-links.scss */
 .button-links ul, .button-links li { list-style: none; }
-/* line 8, ../components/sass/_styles_button-links.scss */
+/* line 27, ../components/sass/_styles_button-links.scss */
 .button-links .fa { padding-bottom: 10px; width: 100%; display: block; }
-/* line 10, ../components/sass/_styles_button-links.scss */
+/* line 29, ../components/sass/_styles_button-links.scss */
 .button-links strong { clear: both; display: block; }
 
-@media (min-width: 640px) { /* line 15, ../components/sass/_styles_button-links.scss */
+@media (min-width: 640px) { /* line 34, ../components/sass/_styles_button-links.scss */
   .button-links .three-columns .column:nth-of-type(3n+2), .button-links .three-columns .columns:nth-of-type(3n+2) { border-left: 1px solid #fff; border-right: 1px solid #fff; padding-left: 2rem; padding-right: 2rem; } }
 /* line 1, ../components/sass/_styles_tables.scss */
 td { padding: 3px; }
